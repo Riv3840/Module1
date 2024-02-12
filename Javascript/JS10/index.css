@@ -1,0 +1,10 @@
+p.one {
+    border-style: solid;
+    border-color: red;
+    width: 20%;
+    height: 35px;
+  }
+  p.two{
+    margin-right: 500px;
+  }
+  

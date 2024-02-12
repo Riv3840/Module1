@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="JS17.css" type="text/css">
+    <title>Stopwatch</title>
+</head>
+
+<body>
+    <div class="center">
+        <h2> Arthur's stopwatch</h2>
+        <div class="stopwatch">
+            <div id="mindisplay">00</div>
+            <div>:</div>
+            <div id="secdisplay">00</div>
+            <div>:</div>
+            <div id="milsecdisplay">00</div>
+        </div>
+        <div> 
+        <br>
+        <button id="fstop" onclick="fStop()">stop</button>
+        <button id="fstart" onclick="fStart()">start</button>
+        <button id="freset" onclick="fReset()">reset</button>
+        </div>
+    </div>
+
+    <script>
+        let milsec = 0;
+        let sec = 0;
+        let min = 0;
+        let milsecInterval;
+
+        function fStart() {
+            milsecInterval = setTimeout(fStart, 10);
+            document.getElementById("milsecdisplay").innerHTML = milsec;
+            document.getElementById('fstart').innerHTML = 'continue';
+            milsec = milsec + 1;
+            if (milsec <= 99) {
+                if (lowthen10(milsec)) {
+                    document.getElementById("milsecdisplay").innerHTML = "0" + milsec;
+                } else {
+                    document.getElementById("milsecdisplay").innerHTML = milsec;
+                }
+            } else {
+                document.getElementById("milsecdisplay").innerHTML = "00";
+            }
+            if (milsec > 99) {
+                milsec = 0;
+                sec = sec + 1;
+                if (sec <= 59) {
+                    if (lowthen10(sec)) {
+                        document.getElementById("secdisplay").innerHTML = "0" + sec;
+                    } else {
+                        document.getElementById("secdisplay").innerHTML = sec;
+                    }
+                }
+                if (sec > 59) {
+                    sec = 0;
+                    min = min + 1;
+                    if (lowthen10(min)) {
+                        document.getElementById("mindisplay").innerHTML = "0" + min;
+                    } else {
+                        document.getElementById("mindisplay").innerHTML = min;
+                    }
+
+                }
+            }
+        }
+        function fStop() {
+            clearInterval(milsecInterval);
+        }
+
+        function fReset() {
+            milsec = 0;
+            sec = 0;
+            min = 0;
+            clearInterval(milsecInterval);
+            document.getElementById("milsecdisplay").innerHTML = "";
+            document.getElementById("secdisplay").innerHTML = "";
+            document.getElementById("mindisplay").innerHTML = "";
+            document.getElementById('fstart').innerHTML = 'start';
+        }
+
+        function lowthen10(time) {
+            if (time < 10) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+    </script>
+</body>

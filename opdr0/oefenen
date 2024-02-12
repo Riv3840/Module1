@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css"  type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <a href="https://shopeu.hstyles.co.uk/">
+    <img style="width:100px; height:100px" src="images/harry.jpg" /> 
+    </a>
+    <a href="https://www.niallhoran.com/#/">
+    <img style="width:100px; height:100px"src="images/niall.jpg" />
+    </a>
+    <a href="https://louis-tomlinson.com/">
+    <img style="width:100px; height:100px"src="images/louis.jpg" /> 
+    </a>
+    <a href="https://www.instagram.com/liampayne/">
+     <img style="width:102px; height:100px" src="images/liam.jpg" /> 
+     </a>
+    <a href="https://www.instagram.com/zayn/">
+    <img style="width:110px; height:100px" src="images/Zayn.jpg" /> 
+    </a> 
+    <a href="https://5sos.com/">
+     <img style="width:100px; height:100px" src="images/5sos.jpg" /> 
+    </a> 
+    <a href="https://www.onedirectionmusic.com/gb/home.html">
+        <img style="width:150px; height:100px" src="images/1d.jpg" /> 
+    </a>
+
+        <p id="nr1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis dolor quis accumsan varius. Nunc lobortis sagittis lectus sed cursus. Mauris dolor ligula, aliquam et interdum nec, consequat vitae libero. Donec scelerisque velit id eros porta, vel pulvinar odio mollis. Vivamus scelerisque neque enim, a lobortis dolor rutrum sed. Nunc et metus tristique, ornare enim vel, scelerisque lorem. Integer eget posuere sem. Praesent eu euismod elit, pharetra ultricies elit. Praesent ultricies urna nec eros hendrerit, sit amet congue enim fermentum. Sed pellentesque porttitor tincidunt.
+        </p>
+        <p id="nr2">
+        Nulla molestie mollis facilisis. Praesent porttitor purus nec purus ornare lacinia. Maecenas blandit feugiat venenatis. Cras ligula arcu, ultricies in odio id, faucibus luctus neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse efficitur magna id lectus elementum, et consectetur risus mollis. Sed quam diam, auctor id mattis eget, commodo in odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean ac purus dapibus, pulvinar nisl a, luctus ligula. Phasellus sed leo nec ipsum luctus ullamcorper at condimentum nisi. Maecenas ut leo vel orci sodales posuere. Sed non nisl mi. Suspendisse hendrerit eleifend felis vel viverra. Fusce lacus diam, dignissim ut lectus sit amet, varius ultrices neque.
+        </p>
+        <p id="nr3">
+        Curabitur metus elit, sodales ut tortor nec, sodales condimentum orci. Fusce nulla ipsum, fermentum in faucibus in, tincidunt vitae velit. Curabitur nec diam justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec et dui neque. Vestibulum sed mollis libero. Proin vitae eros commodo enim accumsan viverra.
+        </p>
+        <p id="nr4">
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec ullamcorper accumsan quam. Duis blandit arcu ac massa elementum, in varius sapien pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ornare et neque fermentum convallis. In ac convallis odio. Donec lacinia tincidunt porttitor. Nam elementum aliquam quam a sodales. Pellentesque a viverra lacus.
+        </p>
+        <p id="nr5">
+        Donec sodales leo dolor, at fringilla sapien venenatis vitae. Duis accumsan condimentum arcu, quis viverra odio vehicula in. Proin ullamcorper euismod tellus auctor lacinia. Etiam blandit fringilla sem non suscipit. Integer malesuada justo justo, accumsan malesuada lacus consequat eu. Integer vel sapien magna. Ut nec euismod tellus, et interdum est. Pellentesque euismod semper lacinia. Morbi augue diam, dapibus ac justo eu, vestibulum porta neque. In commodo ut orci vel facilisis. Vestibulum a lacus vulputate, lobortis augue vel, aliquam dui. Duis tincidunt nisl id enim convallis porta. Nulla viverra nisl et fermentum tincidunt.
+        </p>
+        <p id="nr6">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a consequat leo, eu pharetra mauris. Proin sodales nunc et nibh laoreet ultricies consectetur nec lacus. Etiam dignissim, lorem non malesuada varius, nisl libero fringilla orci, in consectetur leo libero convallis
+        </p>
+          <a href="https://webshop.fcgroningen.nl/">
+            <img style="width:150px; height:100px" src="images/fcg.jpg" /> 
+           </a> 
+           <a href="https://webshop.fcgroningen.nl/">
+            <img style="width:150px; height:100px" src="images/fcg2.jpg" /> 
+           </a> 
+           <a href="https://webshop.fcgroningen.nl/">
+            <img style="width:150px; height:100px" src="images/fcg3.jpg" /> 
+           </a> 
+           <a href="https://webshop.fcgroningen.nl/">
+            <img style="width:150px; height:100px" src="images/fcg4.jpg" /> 
+           </a> 
+           <a href="https://webshop.fcgroningen.nl/">
+            <img style="width:150px; height:100px" src="images/fcg5.jpg" /> 
+         
+           </a> 
+           
+</body>
+</html>

@@ -1,0 +1,36 @@
+.label p{
+margin:0%;
+padding:1.5px;
+
+}
+
+.label {
+  display:flex;
+flex-direction: column;
+width: 15%;
+}
+
+div{
+  flex-direction: row;
+}
+
+.input{
+  display: flex;
+}
+
+#tv{
+  width: 30px;
+}
+
+#checklist{
+  flex-direction: column;
+}
+
+#faults{
+    border-style: solid;
+    border-color: red;
+  margin:3px;
+  padding:30px;
+  width: 600px;
+  
+}

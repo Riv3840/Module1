@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="cars"></div>
+    <div id="new_car"></div>
+    <div id="prices"></div>
+    <script>
+        const cars = new Array("Saab", "Volvo", "BMW"); 
+        const prices = new Array(17000, 18000, 19000);
+        loads();
+        function addElement() {
+            let input =
+                document.getElementById('Carsinput')
+            let newcar = input.value;
+            cars.push(newcar);
+            input.value = '';
+            console.log(cars);
+            let input2 =
+                document.getElementById('pricesinput')
+            let newprice = input2.value;
+            prices.push(newprice);
+            input2.value = '';
+            console.log(cars)
+            loads();
+        }
+        function loads() {
+            document.getElementById("cars").innerHTML ='';
+            for (let index = 0; index < cars.length; index++) {
+                document.getElementById("cars").innerHTML += "de " + cars[index] + " kost €" + prices[index] + "<br>"
+            };
+        }
+    </script>
+    <br>
+    <input type="text" id="Carsinput"> <Br>
+    <input type="text" id="pricesinput"> <br>
+    <button onclick="addElement()">toevoegen</button> <br>
+    <div id="cars"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Document</title>
+</head>
+
+<body>
+  test formulier>
+  <div class="input">
+    <div class="label">
+      <p>*naam:</p>
+      <p>*adres:</p>
+      <p>*PC plaats:</p>
+      <p>telefoon: </p>
+      <p>email:</p>
+      <p>geslacht:</p>
+      <p>geb.datum:</p>
+      <p>boybands:</p>
+      <p>verplichte velden *</p>
+
+    </div>
+    <div>
+      <div> <input id="naam" type="text" name="voornaam" placeholder="voornaam" onblur="checkInput('naam')">
+        <input id="tv" type="text" name="tv" class="resizedTextbox" placeholder="tv" onblur="checkInput('tv')">
+        <input id="anaamt" type="text" name="achternaam" placeholder="achternaam" onblur="checkInput('anaamt')">
+      </div>
+      <input id="adres" type="text" name="adres" placeholder="adres" onblur="checkInput('adres')"> <br>
+      <div> <input id="postcode" type="text" name="postcode" class="resizedTextbox2" placeholder="postcode" onblur="checkInput('postcode')">
+        <input id="plaats" type="text" name="plaats" placeholder="plaats" onblur="checkInput('plaats')">
+      </div>
+      <input id="telefoon" type="number" name="telefoon" placeholder="telefoonnummer" maxlength="10"" onblur="checkInput('telefoon')"><br>
+      <input id="email" type="email" name="email" placeholder="email" onblur="checkInput('email')"> <br>
+      <div id="checklist">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male" checked>
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female">
+      </div>
+      <input id="geb.datum" type="datum" name="geb.datum" onblur="checkInput('geb.datum')"> opmaak: "dd-mm-jjjj" <br>
+      <select id="Boyband">
+        <option value="choose a band">choose a band</option>
+        <option value="onedirection">onedirection</option>
+        <option value="5secondsofsummer">5secondsofsummer</option>
+        <option value="onlythepoets">onlythepoets</option>
+        <option value="queen">qeeun</option>
+      </select> <br>
+      <input type="submit">
+    </div>
+  </div>
+  <div id="faults"></div>
+  </div>
+  </div>
+  <script>
+    function checkInput(id) {
+      console.log("We zitten nu in de checkinput")
+      let element = document.getElementById(id);
+
+      if (element.value.length < 3) {
+        element.style.backgroundColor = "red";
+      }
+
+      else {
+        element.style.backgroundColor = "lightgreen";
+      }
+    }
+    console.log("We zitten nu in de checkinput")
+    let text = element.value;
+    var rege = /^[1-9][0-9]{3} ?(?!sa|sd|ss)[a-z]{2}$/i;
+    if (text.match(rege)) {
+      document.getElementById('DIT IS EEN POSTCODE');
+    }
+  </script>
+
+</body>
+
+</html>
